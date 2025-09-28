@@ -11,5 +11,5 @@ export default defineConfig({
       "@": path.resolve(__dirname, "./src"),
     },
   },
-  base: 'https://github.com/aura-baza/portfolio_Yocef.git'
+  // base: 'https://github.com/aura-baza/portfolio_Yocef.git'
 })
