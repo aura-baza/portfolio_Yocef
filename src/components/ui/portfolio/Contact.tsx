@@ -4,7 +4,8 @@ import { Button } from "../../../components/ui/button";
 import { Input } from "../../../components/ui/input";
 import { Textarea } from "../../../components/ui/textarea";
 import { fadeInUp } from "../../../lib/animations";
-
+import SocialMediaIcons from "./SocialMediaIcons";
+import ContactIcons from "./ContactIcons";
 export default function Contact() {
   const [formData, setFormData] = useState({
     name: '',
@@ -38,13 +39,13 @@ export default function Contact() {
           <h2 className="text-4xl md:text-5xl font-light text-neutral-900 mb-6 tracking-tight">
             Ponte en contacto
           </h2>
-          <div className="w-16 h-px bg-neutral-400 mx-auto mb-8 " />
+          {/* <div className="w-16 h-px bg-neutral-400 mx-auto mb-8 " /> */}
           <p className="text-lg text-neutral-600 max-w-2xl mx-auto">
            Siempre me interesan nuevas oportunidades y colaboraciones. Hablemos sobre cómo podemos trabajar juntos.
           </p>
         </motion.div>
 
-        <div className="grid lg:grid-cols-2 gap-16 rounded-lg  shadow-xl/20">
+        <div className="grid lg:grid-cols-2 gap-14 p-6 rounded-lg  shadow-xl/20 border">
           {/* Contact form */}
           <motion.div
             initial={fadeInUp.initial}
@@ -91,7 +92,7 @@ export default function Contact() {
               
               <Button
                 type="submit"
-                className="w-full bg-neutral-900  text-white py-6 text-lg font-light tracking-wide "
+                className="w-full  !bg-neutral-900 text-white py-6 text-lg font-light tracking-wide "
                 variant={"outline"}
               >
                 Enviar
@@ -105,44 +106,20 @@ export default function Contact() {
             whileInView={fadeInUp.animate}
             transition={{ ...fadeInUp }}
             viewport={{ once: true }}
-            className="space-y-12"
+            className="space-y-10"
           >
-            <div>
+            <div >
               <h3 className="text-xl font-medium text-neutral-900 mb-6">Informacion De Contacto</h3>
-              <div className="space-y-4 text-neutral-600">
-                <p>
-                  <span className="block text-sm uppercase tracking-wide text-neutral-500 mb-1">Correo</span>
-                  yrocabarboza@gmail.com
-                </p>
-                <p>
-                  <span className="block text-sm uppercase tracking-wide text-neutral-500 mb-1">Telefono</span>
-                  +57 (301) 399-6850
-                </p>
-                <p>
-                  <span className="block text-sm uppercase tracking-wide text-neutral-500 mb-1">Ubicacion</span>
-                  Cartagena, Colombia
-                </p>
+              <div className="space-y-4 text-neutral-600 ">
+                {/*Contain Info Iconos */}
+               <ContactIcons/>
               </div>
             </div>
 
-            <div className="flex  justify-between border">
-              <h3 className="text-xl font-medium text-neutral-900 mb-6">Sigueme</h3>
-              <div className="flex space-x-4">
-                {[
-                  { name: 'LinkedIn', href: '#' },
-                  { name: 'Twitter', href: '#' },
-                  { name: 'Instagram', href: '#' },
-                  { name: 'Dribbble', href: '#' }
-                ].map((social) => (
-                  <a
-                    key={social.name}
-                    href={social.href}
-                    className="text-neutral-500 hover:text-neutral-900 transition-colors duration-300"
-                  >
-                    <span className="text-sm uppercase tracking-wide">{social.name}</span>
-                  </a>
-                ))}
-              </div>
+            <div className="flex items-center gap-2 ">
+              <h3 className="text-xl font-medium text-neutral-900">Sigueme</h3>
+              {/* Social Media Icons */}
+              <SocialMediaIcons/>
             </div>
           </motion.div>
         </div>

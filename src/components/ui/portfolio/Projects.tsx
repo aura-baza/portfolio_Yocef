@@ -51,10 +51,9 @@ export default function Projects() {
           <h2 className="text-4xl md:text-5xl font-light text-neutral-900 mb-6 tracking-tight">
             Proyectos
           </h2>
-          <div className="w-16 h-px bg-neutral-400 mx-auto mb-8" />
+          {/* <div className="w-16 h-px bg-neutral-400 mx-auto mb-8" /> */}
           <p className="text-lg text-neutral-600 max-w-2xl mx-auto">
-            Una colección de proyectos que muestran mi enfoque del diseño y el
-            desarrollo.
+            Creo experiencias digitales que combinan un diseño atractivo con tecnología de vanguardia. Me apasiona crear soluciones que marcan la diferencia.
           </p>
         </motion.div>
 

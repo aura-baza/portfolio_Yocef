@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { fadeInUp, slideInLeft } from "../../../lib/animations";
+import { Button } from "../button";
 
 export default function About() {
   return (
@@ -33,9 +34,8 @@ export default function About() {
               <h2 className="text-4xl md:text-5xl font-light text-neutral-900 mb-6 tracking-tight">
                 ¿Quien soy?
               </h2>
-              <div className="w-16 h-px bg-neutral-400 mb-8" />
+              {/* <div className="w-80 h-px bg-neutral-400 mb-8" /> */}
             </div>
-
             <div className="space-y-6 text-neutral-600 leading-relaxed">
               <p className="text-lg">
                 Productor multimedia especializado en diseño gráfico, enfocado en la creación de contenido visual moderno y de alto impacto. Domino herramientas como Photoshop, Illustrator, After Effects y Premiere, lo que me permite desarrollar piezas claras, creativas e innovadoras. Mi pasión por el diseño me motiva a aprender continuamente para aportar valor en cada proyecto.
@@ -51,15 +51,16 @@ export default function About() {
             </div>
 
             <div className="pt-8">
-              <h3 className="text-xl font-medium text-neutral-900 mb-4">Skills</h3>
-              <div className="flex flex-wrap gap-3">
-                {['Design', 'Development', 'Strategy', 'Branding', 'UI/UX', 'Frontend'].map((skill) => (
-                  <span
+              <h3 className="text-xl font-medium !text-neutral-900 mb-4">HABILIDADES</h3>
+              <div className="flex flex-wrap gap-3 ">
+                {['Diseño', 'Illustrator', 'After Effects', 'Branding', 'UI/UX', 'Photoshop'].map((skill) => (
+                  <Button
                     key={skill}
-                    className="px-4 py-2 bg-neutral-100 text-neutral-700 text-sm rounded-full"
+                    className="px-4 py-2 !bg-neutral-900 text-white text-sm rounded-full !cursor-default"
+                    variant={"outline"}
                   >
                     {skill}
-                  </span>
+                  </Button>
                 ))}
               </div>
             </div>

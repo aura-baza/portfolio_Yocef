@@ -53,6 +53,7 @@ export default function ImageSlider() {
             }`}
             aria-label={`Go to slide ${index + 1}`}
           />
+
         ))}
       </div>
     </div>

@@ -14,7 +14,7 @@ export default function Navigation() {
           {/* Logo/Name */}
           <a 
             href="#" 
-            className="text-lg font-medium text-neutral-900 hover:text-neutral-600 transition-colors duration-300"
+            className="text-lg font-medium !text-neutral-900 hover:text-neutral-600 transition-colors duration-300"
           >
             Logo Portfolio
           </a>
@@ -23,19 +23,19 @@ export default function Navigation() {
           <div className="flex space-x-8">
             <a 
               href="#about" 
-              className="text-sm uppercase tracking-wide text-neutral-600 hover:text-neutral-900 transition-colors duration-300"
+              className="text-sm uppercase tracking-wide !text-neutral-900 hover:text-neutral-900 transition-colors duration-300"
             >
               Sobre mi
             </a>
             <a 
               href="#work" 
-              className="text-sm uppercase tracking-wide text-neutral-600 hover:text-neutral-900 transition-colors duration-300"
+              className="text-sm uppercase tracking-wide !text-neutral-900 hover:text-neutral-900 transition-colors duration-300"
             >
               trabajos
             </a>
             <a 
               href="#contact" 
-              className="text-sm uppercase tracking-wide text-neutral-600 hover:text-neutral-900 transition-colors duration-300"
+              className="text-sm uppercase tracking-wide !text-neutral-900 hover:text-neutral-900 transition-colors duration-300"
             >
               Contactame
             </a>
