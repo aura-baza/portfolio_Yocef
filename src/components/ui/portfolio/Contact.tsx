@@ -37,7 +37,7 @@ export default function Contact() {
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-5xl font-light text-neutral-900 mb-6 tracking-tight">
-            Ponte en contacto
+           ¿Quieres trabajar conmigo?
           </h2>
           {/* <div className="w-16 h-px bg-neutral-400 mx-auto mb-8 " /> */}
           <p className="text-lg text-neutral-600 max-w-2xl mx-auto">
@@ -109,7 +109,7 @@ export default function Contact() {
             className="space-y-10"
           >
             <div >
-              <h3 className="text-xl font-medium text-neutral-900 mb-6">Informacion De Contacto</h3>
+              <h3 className="text-xl font-medium text-neutral-900 mb-6">Escríbeme</h3>
               <div className="space-y-4 text-neutral-600 ">
                 {/*Contain Info Iconos */}
                <ContactIcons/>

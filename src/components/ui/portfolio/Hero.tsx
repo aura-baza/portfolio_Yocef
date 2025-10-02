@@ -23,7 +23,7 @@ export default function Hero() {
           // className="mb-8 border"
         >
           <h1 className="text-6xl md:text-8xl font-light tracking-tight text-neutral-900 mb-4">
-            Yocef Steven Roca
+            Hola, Soy Yocef  Roca
           </h1>
           {/* <div className="w-80 h-px bg-neutral-400 mx-auto mb-8" /> */}
         </motion.div>
